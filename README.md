@@ -2,6 +2,7 @@
 
 A nodejs + Expressjs Application to Authenticate the user.
 
+![image](https://user-images.githubusercontent.com/123907854/231011623-0b5cdfa8-3915-4cb1-a7e7-4cd071a69ddf.png)
 
 
 # Technologies Used 
