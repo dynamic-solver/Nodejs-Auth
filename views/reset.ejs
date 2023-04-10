@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Reset Password</title>
+  </head>
+
+  <body>
+    <main>
+      <form action="/reset" method="POST">
+        <h1>Reset Password</h1>
+        <% if (locals.message) { %>
+        <p style="color: red"><%= message %></p>
+        <% } %>
+
+       
+        <input
+          type="password"
+          id="oldPassword"
+          name="oldPassword"
+          required
+          placeholder="Old Password"
+        />
+       
+        <input
+          type="password"
+          id="newPassword"
+          name="newPassword"
+          required
+          placeholder="New Password"
+        />
+       
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          required
+          placeholder="Confirm Password"
+        />
+       
+        <input id="reset-btn" type="submit" value="Reset" />
+      </form>
+    </main>
+    <div id="form-dummy">
+      <form action="/" method="get">
+        <button id="sign-in-btn" type="submit">Home</button>
+      </form>
+  </body>
+</html>
